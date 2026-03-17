@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix con tailwind</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        
+    </style>
+</head>
+<body class="bg-black text-white font-sans overflow-x-hidden selection:bg-[#e50914] selection:text-white">
+
+    <div class="relative min-h-[90vh] flex flex-col items-center">
+        
+        <div class="absolute inset-0 z-0 overflow-hidden">
+            <img src="Imagen netflix.jpg" 
+                 alt="Fondo de Netflix" 
+                 class="w-full h-full object-cover scale-105 opacity-90">
+            <div class="absolute inset-0 bg-black/50"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/60"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-transparent"></div>
+        </div>
+
+        <nav class="relative z-20 w-full max-w-7xl mx-auto flex items-center justify-between px-4 py-6 md:px-8 lg:px-12">
+            <svg class="h-8 md:h-10 fill-[#e50914]" viewBox="0 0 111 30" xmlns="http://www.w3.org/2000/svg">
+                <path d="M105.06233,14.2806261 L110.999156,30 C109.249227,29.7497422 107.500234,29.4366857 105.718437,29.1554972 L102.374168,20.4686475 L98.9371075,28.4375293 C97.2499766,28.1563408 95.5928391,28.061674 93.9057081,27.8432843 L99.9372012,14.0931671 L94.4680851,-5.68434189e-14 L99.5313525,-5.68434189e-14 L102.593495,7.87421502 L105.874965,-5.68434189e-14 L110.999156,-5.68434189e-14 L105.06233,14.2806261 Z M90.4686475,-5.68434189e-14 L85.8749649,-5.68434189e-14 L85.8749649,27.2499766 C87.3746368,27.3437061 88.9371075,27.4055675 90.4686475,27.5930265 L90.4686475,-5.68434189e-14 Z M81.9055207,26.93692 C77.7186241,26.6557316 73.5307901,26.4064111 69.250164,26.3117443 L69.250164,-5.68434189e-14 L73.9366389,-5.68434189e-14 L73.9366389,21.8745899 C76.6248008,21.9373887 79.3120255,22.1557784 81.9055207,22.2804387 L81.9055207,26.93692 Z M64.2496954,10.6561065 L64.2496954,15.3435186 L57.8442216,15.3435186 L57.8442216,25.9996251 L53.2186709,25.9996251 L53.2186709,-5.68434189e-14 L66.3436123,-5.68434189e-14 L66.3436123,4.68741213 L57.8442216,4.68741213 L57.8442216,10.6561065 L64.2496954,10.6561065 Z M45.3435186,4.68741213 L45.3435186,26.2498828 C43.7810479,26.2498828 42.1876465,26.2498828 40.6561065,26.3117443 L40.6561065,4.68741213 L35.8121661,4.68741213 L35.8121661,-5.68434189e-14 L50.2183897,-5.68434189e-14 L50.2183897,4.68741213 L45.3435186,4.68741213 Z M30.749836,15.5928391 C28.687787,15.5928391 26.2498828,15.5928391 24.4999531,15.6875059 L24.4999531,22.6562939 C27.2499766,22.4678976 30,22.2495079 32.7809542,22.1557784 L32.7809542,26.6557316 L19.812541,27.6876933 L19.812541,-5.68434189e-14 L32.7809542,-5.68434189e-14 L32.7809542,4.68741213 L24.4999531,4.68741213 L24.4999531,10.9991564 C26.3126816,10.9991564 29.0936358,10.9054269 30.749836,10.9054269 L30.749836,15.5928391 Z M4.78114163,12.9684132 L4.78114163,29.3429562 C3.09401069,29.5313525 1.59340144,29.7497422 0,30 L0,-5.68434189e-14 L4.4690224,-5.68434189e-14 L10.562377,17.0315868 L10.562377,-5.68434189e-14 L15.2497891,-5.68434189e-14 L15.2497891,28.061674 C13.5935889,28.3437998 11.906458,28.4375293 10.1246602,28.6868498 L4.78114163,12.9684132 Z" />
+            </svg>
+            
+            <div class="flex items-center gap-4">
+                <div class="relative border border-gray-600 rounded bg-black/40 px-3 py-1.5 flex items-center gap-2 hover:ring-2 hover:ring-white/70 transition">
+                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path></svg>
+                    <select class="bg-transparent text-white font-medium text-sm outline-none appearance-none cursor-pointer pr-4">
+                        <option value="es" class="text-black">Español</option>
+                        <option value="en" class="text-black">English</option>
+                        <option value="fr" class="text-black">Français</option>
+                        <option value="de" class="text-black">Deutsch</option>
+                    </select>
+                    <svg class="w-4 h-4 absolute right-2 pointer-events-none text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </div>
+                <a href="#" class="bg-[#e50914] text-white text-sm font-medium px-4 py-1.5 rounded hover:bg-[#c11119] transition">Iniciar sesión</a>
+            </div>
+        </nav>
+
+        <main class="relative z-20 flex-1 flex flex-col items-center justify-center text-center px-4 w-full max-w-[55rem] mt-10 md:mt-16 mb-28">
+            <h1 class="text-[2.5rem] md:text-[3.5rem] leading-[1.1] font-extrabold text-white mb-4 tracking-tight drop-shadow-2xl">
+                Películas y series <br class="hidden md:block"> ilimitadas y mucho <br class="hidden md:block"> más
+            </h1>
+            <p class="text-lg md:text-2xl font-medium text-white mb-6 drop-shadow-lg">
+                A partir de USD 3,99. Cancela cuando quieras.
+            </p>
+            <p class="text-base md:text-[1.15rem] text-white mb-5 drop-shadow-md">
+                ¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu<br class="hidden md:block"> membresía de Netflix.
+            </p>
+            
+            <form class="w-full max-w-2xl flex flex-col md:flex-row gap-2 mt-2 items-center justify-center">
+                <div class="relative w-full md:w-[65%]">
+                    <input type="email" id="email" class="peer w-full bg-black/50 border border-gray-400/70 text-white text-base rounded px-4 pt-6 pb-2 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent transition-all backdrop-blur-sm" placeholder=" " required>
+                    <label for="email" class="absolute left-4 top-4 text-gray-300 text-base transition-all duration-200 peer-placeholder-shown:text-base peer-placeholder-shown:top-4 peer-focus:top-1.5 peer-focus:text-[13px] peer-valid:top-1.5 peer-valid:text-[13px] pointer-events-none font-medium">Email</label>
+                </div>
+                <button type="submit" class="bg-[#e50914] hover:bg-[#c11119] text-white text-xl md:text-2xl font-bold px-6 py-3 rounded flex items-center justify-center gap-3 w-full md:w-auto h-[56px] transition">
+                    Comenzar 
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
+                </button>
+            </form>
+        </main>
+
+    </div>
+<body>
+     <div class="h-16 rounded-tl-[100%] rounded-tr-[100%]  bg-radial-[at_50%_0%] from-blue-800/75 to-black to-75% border-t-[5px] border-red-600/75"></div>
+        
+   </body>
+    <h2 class="text-xl md:text-2xl font-semibold text-white mb-6">Tendencias</h2>
+
+</body>
+</html>
